@@ -1,6 +1,6 @@
 #include <unistd.h>
 #include <stdio.h>
-#include <std;ib.h>
+#include <stdlib.h>
 /**
  *main- Using write
  *
