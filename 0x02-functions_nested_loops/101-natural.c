@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - function that lists all the natural numbers that are multiples of 3 and 5 below 1024
+ * main - function lists all multiples of 3 and 5 below 1024
  *
  * Return: returns 0 always
  */
