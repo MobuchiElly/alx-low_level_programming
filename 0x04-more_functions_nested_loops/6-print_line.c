@@ -6,12 +6,11 @@
  * Return: void
  */
 
-
 void print_line(int n)
 {
-	int d;
+	int i;
 
-	for (d = 0; d < n; d++)
+	for (i = 0; i < n; i++)
 	{
 		_putchar('_');
 	}
