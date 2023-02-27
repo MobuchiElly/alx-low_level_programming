@@ -2,9 +2,9 @@
 /**
 * swap_int - function that swaps the value of int a and int b
 *
-* @a: first int
+* @a: first integer
 *
-* @b: second int
+* @b: second integer
 *
 * Return 0
 */
