@@ -1,27 +1,26 @@
 #include "main.h"
 /**
- * rot13 - function that encodes a string into rot13
- *
- * @s: string to encode
- *
- * Return: address of s
- */
-char *rot13(char *s)
-{
-	Int d, i;
-	char c[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char l[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+  * print_number - function that prints any integer with putchar
+  *
+  * @n: number to be printed
+  *
+  * Return: void
+  */
 
-	for (d = 0; *(s + d); d++)
+void print_number(int n)
+{
+	unsigned int i;
+
+	i = n;
+
+	if (n < 0)
 	{
-		for (i = 0; i < 52; i++)
-		{
-			if (c[i] == *(s + d))
-			{
-				*(s + d) = l[i];
-				break;
-			}
-		}
+		_putchar('-');
+		n *= -1;
 	}
-	return (s);
+
+	if (i / 10)
+		print_number(i / 10);
+
+	_putchar(i % 10 + '0');
 }
