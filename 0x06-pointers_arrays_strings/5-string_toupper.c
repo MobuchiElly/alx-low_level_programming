@@ -12,9 +12,9 @@ char *string_toupper(char *str)
 
 	while (*c != '\0')
 	{
-		if (*ptr >= 'a' && *ptr <= 'z')
+		if (*c >= 'a' && *c <= 'z')
 		{
-		*ptr = *ptr - 'a' + 'A';
+		*c = *c - 'a' + 'A';
 		}
 	c++;
 	}
