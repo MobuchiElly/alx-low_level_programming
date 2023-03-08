@@ -17,5 +17,6 @@ int root(int d, int b);
 int prime(int a, int b);
 int _strlen_recursion(char *s);
 int palindromeChecker(char *s, int i, int j);
+int str_checker(char *s1, char *s2, int d, int i);
 
 #endif
