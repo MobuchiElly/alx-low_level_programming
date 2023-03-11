@@ -14,17 +14,17 @@ int main(int argc, char **argv)
 {
 	int i, d;
 
-	i = atoi(argv[1]);
-	d = atoi(argv[2]);
-
 	if (argc < 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	else
+	if (argc >= 3)
 	{
-	printf("%d\n", i * d);
+		i = atoi(argv[1]);
+		d = atoi(argv[2]);
+
+		printf("%d\n", i * d);
 	}
 	return (0);
 }
