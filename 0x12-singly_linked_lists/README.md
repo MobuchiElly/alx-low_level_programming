@@ -1,4 +1,4 @@
-This is a project on the use of linked lists. The projects covers nodes, dynmaic and static lists. 
+This is a project on the use of linked lists. The projects covers nodes, dynmaic and static lists.
 
 The oulined programs were created;
 Function that prints all the elements of a list_t list.
