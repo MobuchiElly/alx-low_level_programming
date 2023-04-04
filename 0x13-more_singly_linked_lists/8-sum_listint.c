@@ -1,8 +1,8 @@
 #include "lists.h"
 #include <stdlib.h>
-
 /**
- * sum_listint - calculates the sum of all the data (n) of a listint_t linked list
+ * sum_listint - function calculates sum of all the data of listint_t
+ *
  * @head: pointer to the head of the linked list
  *
  * Return: sum of all the data (n) or 0 if the list is empty
@@ -10,6 +10,7 @@
 int sum_listint(listint_t *head)
 {
 	int sum;
+
 	sum = 0;
 
 	if (head == NULL)
