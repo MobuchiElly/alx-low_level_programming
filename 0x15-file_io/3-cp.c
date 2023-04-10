@@ -8,7 +8,7 @@
 
 void error_exit(char *msg, int exit_code);
 
-void copy_file(int source, int dest);
+void copy(int source, int dest);
 
 
 /**
@@ -23,12 +23,12 @@ void error_exit(char *msg, int exit_code)
 }
 
 /**
- * copy_file - copies the contents of one file to another
+ * copy - copies the contents of one file to another
  * @source: the file to copy from
  * @dest: the file to copy to
  */
 
-void copy_file(int source, int dest)
+void copy(int source, int dest)
 {
 	char buffer[BUFFER_SIZE];
 	ssize_t bytes_read, bytes_written;
@@ -87,7 +87,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	copy_file(source_fd, dest_fd);
+	copy(source_fd, dest_fd);
 
 	if (close(source_fd) == -1)
 	{
