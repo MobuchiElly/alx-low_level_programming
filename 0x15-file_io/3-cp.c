@@ -1,16 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <fcntl.h>
-
-#define BUFFER_SIZE 1024
-
-void error_exit(char *msg, int exit_code);
-
-void copy(int source, int dest);
-
-
 /**
  * error_exit - prints an error message to standard error and exits
  * @msg: error message to be printed
